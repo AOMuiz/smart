@@ -1,27 +1,31 @@
+import { Installment } from "@/screen/FeeSelection";
 import React, { useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 
-export default function DropdownDetail({
+export default function Dropdown({
   handleSelected,
   selectedItem,
   options,
 }: {
-  handleSelected: (item: any) => void;
+  handleSelected: (item: string, breakdown: string[]) => void;
   selectedItem: null | string;
-  options: string[];
+  options: Installment[];
 }) {
   return (
     <View style={styles.dropDownDetailContainer}>
       {options.map((option) => (
-        <TouchableOpacity key={option} onPress={() => handleSelected(option)}>
+        <TouchableOpacity
+          key={option.type}
+          onPress={() => handleSelected(option.name, option.breakdown)}
+        >
           <Text
             style={
-              selectedItem === option
+              selectedItem === option.name
                 ? styles.selectedDropDownDetailOption
                 : styles.dropDownDetailOption
             }
           >
-            {option}
+            {option.name}
           </Text>
         </TouchableOpacity>
       ))}
