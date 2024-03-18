@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import { hp } from "@/utils/dimensions";
-import PaymentSummary from "@/screen/PaymentSummary";
+import PaymentSummary from "@/screen/StudentPaymentSummary";
 
 type TableType = string;
 

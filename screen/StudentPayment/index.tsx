@@ -20,6 +20,7 @@ export default function StudentPayment() {
   const [tableType, setTableType] = useState<
     "Pending payments" | "Payment history"
   >("Pending payments");
+
   const navigation = useNavigation<PaymentStackNavigationProp>();
   const [selectedPayments, setSelectedPayments] = useState(
     PAYMENT_DETAILS.map(() => false)
@@ -27,7 +28,7 @@ export default function StudentPayment() {
 
   const handlePayment = () => {
     console.log("payed");
-    navigation.navigate("PaymentSummary");
+    navigation.navigate("StudentPaymentSummary");
   };
 
   const handleSelectPayment = (index: number) => {

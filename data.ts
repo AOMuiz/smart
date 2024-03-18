@@ -70,6 +70,33 @@ export const PAYMENT_DETAILS = [
     price: "₦20,000.00",
   },
 ];
+export const PAYMENT_SUMMARY = [
+  {
+    id: 1,
+    title: "Tuition fee",
+    price: "₦30,000.00",
+  },
+  {
+    id: 2,
+    title: "W.A.E.C fee",
+    price: "₦30,000.00",
+  },
+  {
+    id: 3,
+    title: "Graduation fee",
+    price: "₦20,000.00",
+  },
+  {
+    id: 4,
+    title: "V.A.T",
+    price: "₦1,500.00",
+  },
+  {
+    id: 5,
+    title: "Total",
+    price: "₦41,000.00",
+  },
+];
 
 export const COMPLETED_PAYMENT = [
   {

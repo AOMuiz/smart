@@ -5,6 +5,8 @@ declare type FeeStackNavigatorParamList = {
 };
 declare type PaymentStackNavigatorParamList = {
   FeeSummary: undefined;
+  StudentPayment: undefined;
+  StudentPaymentSummary: undefined;
 };
 
 declare type AuthStackNavigatorParamList = {
